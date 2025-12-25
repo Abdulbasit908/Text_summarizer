@@ -1,6 +1,9 @@
 import nltk
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
+nltk.download('punkt', quiet=True)
+nltk.download('punkt_tab', quiet=True)
+nltk.download('stopwords', quiet=True)
 
 def summarize(text, ratio=0.3):
     stop_words = set(stopwords.words("english"))
